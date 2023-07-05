@@ -1,0 +1,649 @@
+<!-- 
+    https://www.gigaplaces.com/pl/gigalist-najpiekniejsze-miasta-swiata/ 
+    https://www.interhome.pl/travelguide/10-najpiekniejszych-miast-europy
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAJPIĘKNIEJSZE MIASTA EUROPY</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:768px)"
+      href="./css/medium.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:1200px)"
+      href="./css/x-large.css"
+    />
+  </head>
+
+  <body>
+    <nav
+      class="navbar border-bottom border-bottom-dark navbar-expand-lg bg-body-tertiary sticky-top"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">O projekcie</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Wybierz miasto
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#city-paryz">Paryż</a></li>
+                <li>
+                  <a class="dropdown-item" href="#city-wenecja">Wenecja</a>
+                </li>
+                <li><a class="dropdown-item" href="#city-wieden">Wiedeń</a></li>
+                <li>
+                  <a class="dropdown-item" href="#city-londyn">Londyn</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#city-stambul">Stambuł</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#city-bangkok">Bangkok</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="flex_full">
+      <div
+        id="carouselAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselAutoplaying"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselAutoplaying"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselAutoplaying"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselAutoplaying"
+            data-bs-slide-to="3"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselAutoplaying"
+            data-bs-slide-to="4"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselAutoplaying"
+            data-bs-slide-to="5"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000   ">
+            <img src="./img/paryz.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Paryż</h5>
+              <a class="btn btn-sm btn-light" href="#city-paryz" role="button"
+                >Zobacz</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/wenecja.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Wenecja</h5>
+              <a class="btn btn-sm btn-light" href="#city-wenecja" role="button"
+                >Zobacz</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/wieden.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Wiedeń</h5>
+              <a class="btn btn-sm btn-light" href="#city-wieden" role="button"
+                >Zobacz</a
+              >
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/londyn.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Londyn</h5>
+              <a class="btn btn-sm btn-light" href="#city-londyn" role="button"
+                >Zobacz</a
+              >
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/stambul.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Stambuł</h5>
+              <a class="btn btn-sm btn-light" href="#city-stambul" role="button"
+                >Zobacz</a
+              >
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/bangkok.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bangkok</h5>
+              <a class="btn btn-sm btn-light" href="#city-bangkok" role="button"
+                >Zobacz</a
+              >
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="_album">
+        <div class="section_header bgcolor_lightgrey" id="about">
+          <div class="container">
+            <h1>O projekcie</h1>
+            <p class="text-start text_justify">
+              Poznaj najpiękniejsze miasta Europy. Oto lista, na którą składa
+              się 6 wyjątkowych destynacji. Wymienione poniżej miejsca każdego
+              roku ściągają w swoje strony ogromne ilości turystów ze względu
+              m.in. na historyczną/nowoczesną architekturę, wyjątkowe położenie
+              albo inne elementy, które wpływają na ich ponadprzeciętną
+              atrakcyjność.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex_center flex_row_container">
+        <div class="all_places flex_row_container_medium">
+          <div class="single_place shadows flex_row_container">
+            <img style="border-radius: 10px" src="./img/paryz.jpeg" alt="" />
+            <div class="col-container">
+              <div class="col"><h2>Paryż</h2></div>
+              <div class="col">
+                <h3>
+                  Francja
+                  <img
+                    style="height: 27px; width: 46px"
+                    src="./flags/f_france.jpg"
+                  />
+                </h3>
+              </div>
+            </div>
+            <div class="container">
+              <a class="btn btn-primary" href="#city-paryz" role="button"
+                >Więcej</a
+              >
+            </div>
+          </div>
+
+          <div class="single_place shadows flex_row_container">
+            <img style="border-radius: 10px" src="./img/wenecja.jpeg" alt="" />
+            <div class="col-container">
+              <div class="col"><h2>Wenecja</h2></div>
+              <div class="col">
+                <h3>
+                  Włochy
+                  <img
+                    style="height: 27px; width: 46px"
+                    src="./flags/f_italy.jpg"
+                  />
+                </h3>
+              </div>
+            </div>
+            <div class="container">
+              <a class="btn btn-primary" href="#city-wenecja" role="button"
+                >Więcej</a
+              >
+            </div>
+          </div>
+
+          <div class="single_place shadows flex_row_container">
+            <img style="border-radius: 10px" src="./img/wieden.jpeg" alt="" />
+            <div class="col-container">
+              <div class="col"><h2>Wiedeń</h2></div>
+              <div class="col">
+                <h3>
+                  Austria
+                  <img
+                    style="height: 27px; width: 46px"
+                    src="./flags/f_austria.jpg"
+                  />
+                </h3>
+              </div>
+            </div>
+            <div class="container">
+              <a class="btn btn-primary" href="#city-wieden" role="button"
+                >Więcej</a
+              >
+            </div>
+          </div>
+
+          <div class="single_place shadows flex_row_container">
+            <img style="border-radius: 10px" src="./img/londyn.jpg" alt="" />
+            <div class="col-container">
+              <div class="col"><h2>Londyn</h2></div>
+              <div class="col">
+                <h3>
+                  Malta
+                  <img
+                    style="height: 27px; width: 46px"
+                    src="./flags/f_malta.jpg"
+                  />
+                </h3>
+              </div>
+            </div>
+            <div class="container">
+              <a class="btn btn-primary" href="#city-londyn" role="button"
+                >Więcej</a
+              >
+            </div>
+          </div>
+
+          <div class="single_place shadows flex_row_container">
+            <img style="border-radius: 10px" src="./img/stambul.jpeg" alt="" />
+            <div class="col-container">
+              <div class="col"><h2>Stambuł</h2></div>
+              <div class="col">
+                <h3>
+                  Turcja
+                  <img
+                    style="height: 27px; width: 46px"
+                    src="./flags/f_turcja.jpg"
+                  />
+                </h3>
+              </div>
+            </div>
+            <div class="container">
+              <a class="btn btn-primary" href="#city-stambul" role="button"
+                >Więcej</a
+              >
+            </div>
+          </div>
+
+          <div class="single_place shadows flex_row_container">
+            <img style="border-radius: 10px" src="./img/bangkok.jpeg" alt="" />
+            <div class="col-container">
+              <div class="col"><h2>Bangkok</h2></div>
+              <div class="col">
+                <h3>
+                  Tajlandia
+                  <img
+                    style="height: 27px; width: 46px"
+                    src="./flags/f_tajlandia.jpg"
+                  />
+                </h3>
+              </div>
+            </div>
+            <div class="container">
+              <a class="btn btn-primary" href="#city-bangkok" role="button"
+                >Więcej</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="city flex_center">
+        <div class="row margin_t shadows" id="city-paryz">
+          <div class="col-md-3" style="padding-left: 0px">
+            <img
+              style="border-radius: 10px; margin: 0"
+              src="./img/paryz.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6">
+            <h2>Paryż – miasto miłości</h2>
+            <p class="text-start text_justify">
+              Paryż uchodzi za najbardziej romantyczne miasto na świecie.
+              Metropolia mody przyciąga słynnymi zabytkami, takimi jak Wieża
+              Eiffla, gotycka katedra Notre-Dame i Luwr. Najlepiej po prostu
+              pozwolić sobie na dryfowanie po ulicach, przechodzenie z jednej
+              kawiarni do drugiej i spacer po szerokich bulwarach. Disneyland u
+              bram metropolii również wart jest wizyty - szczególnie dla rodzin
+              z dziećmi.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="app_bottom weatherParis">
+              <h2 class="city_name"></h2>
+              <div class="box">
+                <h2 class="temperature-paris"></h2>
+
+                <p class="temperature_description-paris"></p>
+
+                <p>
+                  Temperatura odczuwalna: <span class="feels_like-paris"></span>
+                </p>
+                <p>Ciśnienie: <span class="pressure-paris"></span></p>
+                <p>Wilgotność: <span class="humidity-paris"></span></p>
+                <p>Prędkość wiatru: <span class="wind_speed-paris"></span></p>
+                <p>Zachmurzenie: <span class="clouds-paris"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="city flex_center">
+        <div class="row margin_t shadows" id="city-wenecja">
+          <div class="col-md-3" style="padding-left: 0px">
+            <img style="border-radius: 10px" src="./img/wenecja.jpeg" alt="" />
+          </div>
+          <div class="col-md-6">
+            <h2>Wenecja – fascynujące miasto</h2>
+            <p class="text-start text_justify">
+              Żadne miasto nie jest takie jak Wenecja. Ze swoimi małymi
+              uliczkami, pałacami z minionych czasów i niezliczonymi mostami, to
+              perła wśród miast świata. To niegdyś ważne miasto handlowe było
+              też miejscem narodzin Casanovy. To również ulubione miasto
+              zakochanych i nowożeńców. Ale nie tylko w stanie zakochania warto
+              wybrać się na romantyczną przejażdżka gondolą po kanałach.
+              Wyjątkowym wydarzeniem jest karnawał w Wenecji, podczas którego
+              Wenecjanie ozdabiają się wspaniałymi kostiumami i świętują swoje
+              wyjątkowe miasto i historię.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="app_bottom weatherParis">
+              <h2 class="city_name"></h2>
+              <div class="box">
+                <h2 class="temperature-wenecja"></h2>
+
+                <p class="temperature_description-wenecja"></p>
+
+                <p>
+                  Temperatura odczuwalna:
+                  <span class="feels_like-wenecja"></span>
+                </p>
+                <p>Ciśnienie: <span class="pressure-wenecja"></span></p>
+                <p>Wilgotność: <span class="humidity-wenecja"></span></p>
+                <p>Prędkość wiatru: <span class="wind_speed-wenecja"></span></p>
+                <p>Zachmurzenie: <span class="clouds-wenecja"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="city flex_center">
+        <div class="row margin_t shadows" id="city-wieden">
+          <div class="col-md-3" style="padding-left: 0px">
+            <img style="border-radius: 10px" src="./img/wieden.jpeg" alt="" />
+          </div>
+          <div class="col-md-6">
+            <h2>Wiedeń – cesarskie miasto</h2>
+            <p class="text-start text_justify">
+              Stolica Austrii była niegdyś centrum monarchii austro-węgierskiej.
+              Do dziś przypomina o nim wiele zabytków, takich jak wspaniały
+              Pałac Schönbrunn, dawna rezydencja cesarzowej Sisi i cesarza
+              Franciszka Józefa. Równie imponujący jest barokowy park z dużym
+              zoo i licznymi fontannami, rzeźbami i ozdobnymi ogrodami. Słynnym
+              celem wycieczek jest również Prater ze słynnym diabelskim młynem.
+              Wizyta w Hiszpańskiej Szkole Jeździeckiej to przeżycie dla całej
+              rodziny.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="app_bottom weatherParis">
+              <h2 class="city_name"></h2>
+              <div class="box">
+                <h2 class="temperature-wieden"></h2>
+
+                <p class="temperature_description-wieden"></p>
+
+                <p>
+                  Temperatura odczuwalna:
+                  <span class="feels_like-wieden"></span>
+                </p>
+                <p>Ciśnienie: <span class="pressure-wieden"></span></p>
+                <p>Wilgotność: <span class="humidity-wieden"></span></p>
+                <p>Prędkość wiatru: <span class="wind_speed-wieden"></span></p>
+                <p>Zachmurzenie: <span class="clouds-wieden"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="city flex_center" style="padding-right: 0px">
+        <div class="row margin_t shadows" id="city-londyn">
+          <div class="col-md-3" style="padding-left: 0px">
+            <img style="border-radius: 10px" src="./img/londyn.jpg" alt="" />
+          </div>
+          <div class="col-md-6">
+            <h2>Londyn - światowa stolica nad Tamizą</h2>
+            <p class="text-start text_justify">
+              Stolica Wielkiej Brytanii oferuje bogatą kulturę, najlepsze
+              restauracje z daniami z całego świata i oczywiście bogatą
+              historię. Klimat dawnego imperium czuje się na każdym kroku.
+              Atrakcje, takie jak Tower Bridge, zmiana warty w Pałacu Buckingham
+              lub Pałac Westminsterski zachwycają odwiedzających. Nowoczesne
+              atrakcje to na przykład London Eye czy drapacze chmur takie jak
+              The Shard. Entuzjastów zakupów przyciągają liczne pchle targi w
+              mieście, takie jak Notting Hill czy alternatywny Shoreditch.
+            </p>
+          </div>
+          <div class="col-md-3" style="padding-right: 0px">
+            <div class="app_bottom weatherParis">
+              <h2 class="city_name"></h2>
+              <div class="box">
+                <h2 class="temperature-londyn"></h2>
+
+                <p class="temperature_description-londyn"></p>
+
+                <p>
+                  Temperatura odczuwalna:
+                  <span class="feels_like-londyn"></span>
+                </p>
+                <p>Ciśnienie: <span class="pressure-londyn"></span></p>
+                <p>Wilgotność: <span class="humidity-londyn"></span></p>
+                <p>Prędkość wiatru: <span class="wind_speed-londyn"></span></p>
+                <p>Zachmurzenie: <span class="clouds-londyn"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="city flex_center">
+        <div class="row margin_t shadows" id="city-stambul">
+          <div class="col-md-3" style="padding-left: 0px">
+            <img style="border-radius: 10px" src="./img/stambul.jpeg" alt="" />
+          </div>
+          <div class="col-md-6">
+            <h2>Stambuł - brama Orientu</h2>
+            <p class="text-start text_justify">
+              Stambuł, dawniej Konstantynopol, to największe miasto w Turcji. Ze
+              względu na swoje położenie nazywana jest bramą Orientu. Znajduje
+              się w Europie i Azji. Tutaj znajdziesz największe tureckie
+              zabytki, takie jak Błękitny Meczet, Hagia Sophia oraz pałace
+              Topkapi i Dolmabachce.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="app_bottom weatherParis">
+              <h2 class="city_name"></h2>
+              <div class="box">
+                <h2 class="temperature-stambul"></h2>
+
+                <p class="temperature_description-stambul"></p>
+
+                <p>
+                  Temperatura odczuwalna:
+                  <span class="feels_like-stambul"></span>
+                </p>
+                <p>Ciśnienie: <span class="pressure-stambul"></span></p>
+                <p>Wilgotność: <span class="humidity-stambul"></span></p>
+                <p>Prędkość wiatru: <span class="wind_speed-stambul"></span></p>
+                <p>Zachmurzenie: <span class="clouds-stambul"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="city flex_center">
+        <div class="row margin_t shadows" id="city-bangkok">
+          <div class="col-md-3" style="padding-left: 0px">
+            <img style="border-radius: 10px" src="./img/bangkok.jpeg" alt="" />
+          </div>
+          <div class="col-md-6">
+            <h2>Bangkok - azjatycka metropolia</h2>
+            <p class="text-start text_justify">
+              Bangkok, stolica Tajlandii, to jedno z najbardziej fascynujących i
+              intrygujących miast na świecie - czaruje ono różnorodnością,
+              bogactwem historii, kultury i tradycji. Bangkok to prawdziwa mekka
+              dla podróżników, którzy szukają niepowtarzalnego doświadczenia, w
+              którym wpływy europejskie i starożytne orientalne ślady splatają
+              się w niesamowitej harmonii.Bangkok, stolica Tajlandii, to jedno z
+              najbardziej fascynujących i intrygujących miast na świecie -
+              czaruje ono różnorodnością, bogactwem historii, kultury i
+              tradycji. Bangkok to prawdziwa mekka dla podróżników, którzy
+              szukają niepowtarzalnego doświadczenia, w którym wpływy
+              europejskie i starożytne orientalne ślady splatają się w
+              niesamowitej harmonii.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="app_bottom weatherParis">
+              <h2 class="city_name"></h2>
+              <div class="box">
+                <h2 class="temperature-bangkok"></h2>
+
+                <p class="temperature_description-bangkok"></p>
+
+                <p>
+                  Temperatura odczuwalna:
+                  <span class="feels_like-bangkok"></span>
+                </p>
+                <p>Ciśnienie: <span class="pressure-bangkok"></span></p>
+                <p>Wilgotność: <span class="humidity-bangkok"></span></p>
+                <p>Prędkość wiatru: <span class="wind_speed-bangkok"></span></p>
+                <p>Zachmurzenie: <span class="clouds-bangkok"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="_contact">
+        <div
+          class="section_header bgcolor_lightgrey margin_t border_t"
+          id="contact"
+        >
+          <div class="container">
+            <h1>Kontakt</h1>
+            <p>Super wycieczki sp. z o.o.</p>
+            <p>ul. nieznana 1</p>
+            <p>00-000 Jakieś miasto</p>
+
+            <p></p>
+            <p>tel. +00 123 456 789</p>
+            <p>e-mail: email@email.com</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="border_t">© 2023 Projekt zaliczeniowy WSB</footer>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- <script src="weather.js"></script> -->
+    <!--<script src="js/paris.js"></script>-->
+    <script src="weather.js"></script>
+  </body>
+</html>

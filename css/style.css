@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* header */
+header img {
+  height: calc(90vh - 55px);
+  object-fit: cover;
+  max-width: auto;
+}
+
+.section_header {
+  padding: 20px;
+}
+
+.section_header h1 {
+  color: green;
+}
+
+.carousel-item h5 {
+  font-size: 2em !important;
+  font-weight: bold;
+}
+
+.align_middle {
+  display: flex;
+  align-items: center;
+}
+
+/* colors */
+.bgcolor_lightgrey {
+  background-color: #eee !important;
+}
+
+/* text */
+.text_justify {
+  text-align: justify !important;
+}
+
+.flex_center {
+  margin: 0 auto;
+}
+
+.flex_center h1 {
+  font-size: 2.5em !important;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: left !important;
+  color: green;
+}
+
+.flex_center h2 {
+  font-size: 2em !important;
+  font-weight: bold;
+  text-align: left;
+  line-height: 2em;
+}
+
+.flex_center h3 {
+  font-size: 1.2em !important;
+  font-weight: bold;
+  text-align: right;
+  line-height: 2em;
+}
+
+.flex_column_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.places {
+  padding: 20px;
+}
+
+.single_place {
+  margin: 25px 0;
+  align-self: stretch;
+
+  text-align: justify;
+}
+
+.single_place * {
+  margin-bottom: 10px;
+}
+
+.single_place img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.single_place p {
+  line-height: 1.7;
+  padding: 5px;
+}
+
+.single_place h5 {
+  padding: 5px;
+}
+
+.shadows {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 24px -1px rgba(106, 106, 110, 0.32);
+  -moz-box-shadow: 2px 2px 24px -1px rgba(106, 106, 110, 0.32);
+  box-shadow: 2px 2px 24px -1px rgba(106, 106, 110, 0.32);
+}
+
+/* footer */
+footer {
+  padding: 60px 10px;
+  background-color: #32c962;
+  flex: 1;
+  text-align: center;
+}
+
+/* sekcje */
+.col-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.col {
+  flex: 1;
+  padding: 0 16px;
+}
+
+.col h2 {
+  font-size: 2em !important;
+  font-weight: bold;
+  text-align: left;
+  line-height: 2em;
+}
+
+.col h3 {
+  font-size: 1.2em !important;
+  font-weight: bold;
+  text-align: right;
+  line-height: 2em;
+}
+
+.margin_t {
+  margin-top: 20px;
+}
+
+.border_t {
+  border-top: 2px solid darkgreen;
+}
+
+.city img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*
+.row > * {
+  padding: 0 !important;
+}*/
